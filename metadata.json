@@ -1,0 +1,6 @@
+{
+  "name": "NEXORA - Kelajak G‘oyalari Platformasi",
+  "description": "Innovatsion g‘oyalar, texnologik konseptlar va yangi avlod loyihalarini kashf etish va ulashish platformasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

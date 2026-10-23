@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #07080D;
+    color: #F1F5F9;
+    min-height: 100vh;
+  }
+}
+
+/* Custom glassy surfaces & hairline borders */
+.nexora-glass {
+  background: rgba(15, 18, 27, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nexora-glass-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nexora-glass-hover:hover {
+  background: rgba(22, 27, 40, 0.85);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.6), 0 0 24px -6px rgba(139, 92, 246, 0.15);
+}
+
+.nexora-card-interactive {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.22s ease;
+}
+.nexora-card-interactive:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 255, 157, 0.28);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.7), 0 0 30px -10px rgba(0, 255, 157, 0.12);
+}
+
+/* 3D Core Viewport */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090B11;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2433;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D3748;
+}
+
+/* Floating animation */
+@keyframes nexora-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@keyframes nexora-pulse-glow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes nexora-rotate-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float-slow {
+  animation: nexora-float 9s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: nexora-pulse-glow 7s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: nexora-rotate-slow 40s linear infinite;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

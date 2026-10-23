@@ -1,0 +1,193 @@
+import { Idea } from '../types';
+
+export const initialIdeas: Idea[] = [
+  {
+    id: 'nex-001',
+    title: 'Neyro-Kvant: O‘zbek Tili Katta Til Modeli va Ovozli Sintez',
+    summary: 'O‘zbek tili leksikasi, shevalari va ilmiy atamalarini chuqur tushunuvchi, real-vaqt ovozli sinteziga ega 70B parametrli ochiq neyrotarmoq arxitekturasi.',
+    description: 'Neyro-Kvant loyihasi o‘zbek tili uchun maxsus moslashtirilgan multi-modal katta til modeli bo‘lib, milliy tarix, adabiyot va zamonaviy texnologiya manbalarida o‘qitilgan. Model faqat matn yaratish bilan cheklanmay, audio orqali tabiiy intonatsiyali nutqni sintez qiladi va past kechikishli (sub-200ms) javob qaytaradi.',
+    category: 'ai',
+    tags: ['LLM', 'Neyrotarmoq', 'O‘zbek Tili', 'TTS', 'Ochiq Manba'],
+    stage: 'Alpha',
+    impact: 'Transformative',
+    likes: 142,
+    views: 1890,
+    bookmarks: 68,
+    createdAt: '2026-10-18',
+    author: {
+      id: 'usr-001',
+      name: 'Farrux Zokirov',
+      role: 'AI Tadqiqotchi & Muhandis',
+      email: 'farrux.ai@nexora.io',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'
+    },
+    gradientTheme: 'from-[#00FF9D]/20 via-[#06B6D4]/10 to-[#8B5CF6]/20',
+    featured: true,
+    externalLink: 'https://github.com/nexora-org/neuro-uz'
+  },
+  {
+    id: 'nex-002',
+    title: 'EcoGrid: Quyosh va Shamol Energiyasini Avtonom Taqsimlovchi Tizim',
+    summary: 'Mahalliy mikrotarmoqlarda quyosh panellari ishlab chiqargan ortiqcha energiyani qo‘shni xonadonlarga avtomatik ulashuvchi aqlli invertor va blokcheyn protokoli.',
+    description: 'Energiya isrofgarchiligini 40% ga kamaytiruvchi IoT datchiklar va optimallashtirish algoritmlari to‘plami. Qishloq va shahar hududlarida quyosh batareyalarining ishlab chiqarish quvvatini real-vaqt rejimida hisoblab, energiya zaxiralarini akkumulyatorlarga yo‘naltiradi.',
+    category: 'green',
+    tags: ['Yashil Energiya', 'Smart Grid', 'IoT', 'Barqarorlik'],
+    stage: 'Prototype',
+    impact: 'Transformative',
+    likes: 98,
+    views: 1240,
+    bookmarks: 45,
+    createdAt: '2026-10-19',
+    author: {
+      id: 'usr-002',
+      name: 'Dilnoza Karimova',
+      role: 'CleanTech Muhandisi',
+      email: 'dilnoza.eco@nexora.io',
+      avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80'
+    },
+    gradientTheme: 'from-[#10B981]/20 via-[#059669]/10 to-[#3B82F6]/20',
+    featured: false,
+    externalLink: 'https://ecogrid.energy'
+  },
+  {
+    id: 'nex-003',
+    title: 'OrbitalClean: Past Orbitadagi Fazoviy Chiqindilarni Magnitli Qopqon Bilan Tozalash',
+    summary: 'Yer atrofidagi 1 sm dan 10 sm gacha bo‘lgan sun\'iy yo‘ldosh qoldiqlarini elektromagnit to‘r orqali tutib, atmosferaning yuqori qatlamida xavfsiz yoqib yuboruvchi nanosatellit.',
+    description: 'Kosmik parvozlar xavfsizligini ta\'minlash uchun mo‘ljallangan avtonom sun\'iy yo‘ldoshlar guruhi. Har bir apparat ionli dvigatel bilan jihozlangan va orbital manyovrlarni sun\'iy intellekt orqali energiya tejab amalga oshiradi.',
+    category: 'space',
+    tags: ['Aerokosmik', 'Orbital Dvigatel', 'Sun\'iy Yo‘ldosh', 'Koinot'],
+    stage: 'Concept',
+    impact: 'Transformative',
+    likes: 184,
+    views: 2410,
+    bookmarks: 93,
+    createdAt: '2026-10-15',
+    author: {
+      id: 'usr-003',
+      name: 'Dr. Jamshid Ergashev',
+      role: 'Astrofizik & Konstruktor',
+      email: 'j.ergashev@space-lab.org',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80'
+    },
+    gradientTheme: 'from-[#8B5CF6]/20 via-[#6366F1]/10 to-[#EC4899]/20',
+    featured: true,
+    externalLink: 'https://orbitalclean.space'
+  },
+  {
+    id: 'nex-004',
+    title: 'SynapseOS: Miya-Kompyuter Interfeysi Uchun Ochiq Neyrotizim Qobig‘i',
+    summary: 'Neyrologik signallarni tahlil qilib, falajlangan insonlarga fikr yordamida matn terish va kompyuterni boshqarish imkonini beruvchi xavfsiz Web-standart.',
+    description: 'EEG elektrodlaridan keluvchi shovqinli signallarni real-vaqt rejimida tozalovchi neyron filtrlari va WebAssembly asosidagi modulli dasturiy ta\'minot. Foydalanuvchi qimirlamasdan turib faqat diqqat konsentratsiyasi bilan interfeyslarni boshqaradi.',
+    category: 'web',
+    tags: ['BCI', 'Neyrotexnologiya', 'WebAssembly', 'Inklyuzivlik'],
+    stage: 'Prototype',
+    impact: 'High',
+    likes: 112,
+    views: 1620,
+    bookmarks: 54,
+    createdAt: '2026-10-17',
+    author: {
+      id: 'usr-004',
+      name: 'Malika Rustamova',
+      role: 'Interfeys Muhandisi & BCI Tadqiqotchi',
+      email: 'malika@synapse.dev',
+      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80'
+    },
+    gradientTheme: 'from-[#06B6D4]/20 via-[#3B82F6]/10 to-[#8B5CF6]/20',
+    featured: false
+  },
+  {
+    id: 'nex-005',
+    title: 'MicroAgro: Qurg‘oqchil Hududlar Uchun Nanotomchili Sug‘orish Agromarkazi',
+    summary: 'Tuproq namligi va mineral tarkibini 5 sm chuqurlikda o‘lchovchi arzon biodegradatsiyalanuvchi biosensorlar va tejamkor avtomatlashgan tomchilatib sug‘orish.',
+    description: 'Suv resurslari tanqis bo‘lgan mintaqalarda paxta, bug‘doy va sabzavot ekinlari uchun suv sarfini 65% ga qisqartiradi. Ma\'lumotlar mobil ilovaga uzatilib, dehqonlarga sun\'iy intellekt asosida sug‘orish va o‘g‘itlash bo‘yicha aniq tavsiyalar beriladi.',
+    category: 'green',
+    tags: ['AgroTech', 'Biosensor', 'Suv Tejamkorligi', 'O‘zbekiston'],
+    stage: 'Alpha',
+    impact: 'High',
+    likes: 135,
+    views: 1780,
+    bookmarks: 62,
+    createdAt: '2026-10-12',
+    author: {
+      id: 'usr-005',
+      name: 'Bobur Saidov',
+      role: 'Agro-innovator',
+      email: 'bobur@microagro.uz',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80'
+    },
+    gradientTheme: 'from-[#00FF9D]/20 via-[#10B981]/15 to-[#06B6D4]/15',
+    featured: false,
+    externalLink: 'https://agro-innovations.uz'
+  },
+  {
+    id: 'nex-006',
+    title: 'MetaDesign: 3D Haptik Interfeyslar va Fazo Dizayni Uchun Standart',
+    summary: 'Virtual haqiqat (XR) qurilmalarida raqamli materiallar (ipak, yog‘och, metall) teginish hissiyotini sintez qiluvchi ochiq kodli dizayn kutubxonasi.',
+    description: 'Grafik va fazoviy dizaynerlar uchun yangi davr vositasi. WebGPU va CSS Spatial modullari bilan integratsiya qilinib, brauzerning o‘zida teginish, siljish va massani his qilish imkonini beruvchi parametrli haptik-shablonlarni taqdim etadi.',
+    category: 'design',
+    tags: ['Haptics', 'WebGPU', 'Fazoviy Dizayn', 'Spatial UI'],
+    stage: 'Concept',
+    impact: 'Moderate',
+    likes: 87,
+    views: 940,
+    bookmarks: 39,
+    createdAt: '2026-10-16',
+    author: {
+      id: 'usr-006',
+      name: 'Kamola Fayzullayeva',
+      role: 'Spatial Experience Designer',
+      email: 'kamola.design@nexora.io',
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80'
+    },
+    gradientTheme: 'from-[#EC4899]/20 via-[#8B5CF6]/15 to-[#3B82F6]/15',
+    featured: false
+  },
+  {
+    id: 'nex-007',
+    title: 'FinSphere: Markazlashmagan Mikro-Grantlar va Innovatsiya Fondi',
+    summary: 'Talabalar va yosh startapchilarning ilk prototiplarini jamoaviy baholash orqali to‘g‘ridan-to‘g‘ri byudjetlashtiruvchi shaffof mikro-moliyalashtirish protokoli.',
+    description: 'Byurokratiyasiz, 48 soat ichida g‘oyani tekshirish va dastlabki grant ajratish algoritmi. Jamoat a\'zolari loyihaning kod bazasi, texnik chizmalari va amaliy foydasini baholab, smart-kontraktlar orqali mikro-sarmoya kiritadilar.',
+    category: 'business',
+    tags: ['FinTech', 'Mikrogrant', 'Venchur', 'Startaplar'],
+    stage: 'Alpha',
+    impact: 'High',
+    likes: 129,
+    views: 1510,
+    bookmarks: 77,
+    createdAt: '2026-10-20',
+    author: {
+      id: 'usr-007',
+      name: 'Sherzod Nazirov',
+      role: 'FinTech Strateg & Investor',
+      email: 'sherzod@finsphere.fund',
+      avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80'
+    },
+    gradientTheme: 'from-[#F59E0B]/20 via-[#EF4444]/10 to-[#8B5CF6]/15',
+    featured: false,
+    externalLink: 'https://finsphere.fund'
+  },
+  {
+    id: 'nex-008',
+    title: 'HyperSpeed: Poyezdlar Uchun Magnit Levitatsiyali Vakuum Trassasi',
+    summary: 'Toshkent-Samarqand-Buxoro yo‘nalishida soatiga 750 km tezlikda harakatlanuvchi past bosimli tunnel va magnit yostiqli transport tizimi texnik-iqtisodiy modeli.',
+    description: 'Aerodinamik qarshilikni 90% ga kamaytiruvchi yopiq po‘lat quvurlar ichidagi transport kapsulalari. Qayta tiklanuvchi energiya manbalaridan quvvatlanib, viloyatlararo qatnov vaqtini 25 daqiqagacha qisqartirishni maqsad qilgan muhandislik loyihasi.',
+    category: 'space',
+    tags: ['Maglev', 'Transport', 'Infratuzilma', 'Tezlik'],
+    stage: 'Concept',
+    impact: 'Transformative',
+    likes: 215,
+    views: 3120,
+    bookmarks: 118,
+    createdAt: '2026-10-14',
+    author: {
+      id: 'usr-008',
+      name: 'Otabek Mirzayev',
+      role: 'Transport Muhandisi',
+      email: 'otabek@hyperspeed.uz',
+      avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150&auto=format&fit=crop&q=80'
+    },
+    gradientTheme: 'from-[#00FF9D]/20 via-[#8B5CF6]/20 to-[#06B6D4]/20',
+    featured: false
+  }
+];
